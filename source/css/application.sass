@@ -1,0 +1,65 @@
+@import compass/utilities/sprites
+@import compass/typography
+@import h5bp
+@import susy
+@import compass/typography/vertical_rhythm
+@import compass/support
+@import compass/css3
+@import compass/layout/stretching
+
+
++h5bp-normalize
++establish-baseline
+
+$legacy-support-for-ie: true
+
+
+
+
+@import partials/custom_mixins
+@import partials/grid
+
+
+
+*:focus
+	outline-style: none
+	outline-width: 0px
+
+
+
+@import partials/header
+
+@import partials/footer
+
+@import partials/landing
+
+
+.hyphenate
+	+hyphenation
+
+
+.container
+	+container($total-columns, $break3)
+
+h1,h2,h3,h4,h5,h6,p,span,textarea,input
+	font-family: 'Lato', sans-serif
+html
+	background: black
+
+	
+body
+	min-width: 100%
+	min-height: 100%
+	background: black
+
+p.signature
+	font-family: 'Muli', sans-serif
+	font-weight: 300
+	font-size: px-to-em(12px,16px)
+	line-height: px-to-em(20px,16px)
+	span
+		font-family: 'Lato', sans-serif
+		font-weight: 700
+		font-size: 14px
+		letter-spacing: 2px	
+
