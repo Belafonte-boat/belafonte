@@ -51,5 +51,5 @@ configure :build do
   activate :smusher
 
   # Or use a different image path
-  #set :http_path, "http://thedoers.co/"
+  set :http_path, "http://assets.belafonte.co/"
 end
